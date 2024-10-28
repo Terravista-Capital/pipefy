@@ -36,7 +36,7 @@ baixar_relatorio <- function(id_pipe, id_relatorio, diretorio, headers = c()){
 
   fileURL <- r2$data$pipeReportExport$fileURL
   httr::GET(fileURL,
-            httr::authenticate(user = "arthur@terravistacapital.com.br", password = "Seila619"),
+            httr::authenticate(user = Sys.getenv("PIPEFY_USER"), password = Sys.getenv("PIPEFY_PASSWORD")),
             httr::write_disk(path = paste0(diretorio, "/", id_relatorio, ".xlsx"), overwrite = TRUE))
 
   }
