@@ -2,16 +2,16 @@
 % Please edit documentation in R/preparar_requisicao.R
 \name{preparar_requisicao}
 \alias{preparar_requisicao}
-\title{prepara o objeto para requisicao no pipefy}
+\title{Prepara o objeto para requisição no Pipefy.}
 \usage{
 preparar_requisicao(mock_server = FALSE)
 }
 \arguments{
-\item{mock_server}{A boolean.}
+\item{mock_server}{Indica se a requisição deve ser feita para um servidor mockado.}
 }
 \value{
-A list.
+Lista com informações da requisição.
 }
 \description{
-prepara o objeto para requisicao no pipefy
+Prepara o objeto para requisição no Pipefy.
 }

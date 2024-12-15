@@ -1,5 +1,11 @@
+#' lista os cards em determinada fase do pipefy
+#'
+#' @param id_fase número da fase para pesquisa no pipefy
+#' @param headers parâmetros variáveis para query
+#'
+#' @return tibble
 #' @export
-
+#'
 listar_cards_fase <- function(id_fase, headers = c()){
 
 

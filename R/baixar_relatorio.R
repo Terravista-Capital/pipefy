@@ -1,3 +1,13 @@
+#' Baixa um relatório do Pipefy e salva em um arquivo .xlsx.
+#'
+#' @param id_pipe ID do pipe.
+#' @param id_relatorio ID do relatório.
+#' @param diretorio Diretório onde o relatório será salvo.
+#' @param headers Headers adicionais para a requisição HTTP.
+#'
+#' @return NULL.
+#' @export
+
 baixar_relatorio <- function(id_pipe, id_relatorio, diretorio, headers = c()){
 
   query1 <- paste0('

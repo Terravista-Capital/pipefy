@@ -1,11 +1,10 @@
-#' prepara o objeto para requisicao no pipefy
+#' Prepara o objeto para requisição no Pipefy.
 #'
-#' @param mock_server A boolean.
-#' @returns A list.
-#' @export
+#' @param mock_server Indica se a requisição deve ser feita para um servidor mockado.
+#'
+#' @return Lista com informações da requisição.
 
 preparar_requisicao <- function(mock_server=FALSE) {
-  #token <- ''
   token <- paste("Bearer", Sys.getenv("PIPEFY_API_TOKEN"))
   headers <- c('Authorization' = token)
   endpoint <- 'https://app.pipefy.com/graphql'

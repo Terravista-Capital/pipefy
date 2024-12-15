@@ -1,3 +1,10 @@
+#' Retorna informações de um card no Pipefy.
+#'
+#' @param id ID do card.
+#' @param response_fields Campos a serem retornados pela API.
+#' @param headers Headers adicionais para a requisição HTTP.
+#'
+#' @return Lista com informações do card ou NULL se o card não for encontrado.
 #' @export
 
 card <- function(id, response_fields=NULL, headers=c()){

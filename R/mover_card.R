@@ -1,3 +1,11 @@
+#' Move um card para uma fase diferente no Pipefy.
+#'
+#' @param card_id ID do card.
+#' @param fase_destino_id ID da fase de destino.
+#' @param response_fields Campos a serem retornados pela API.
+#' @param headers Headers adicionais para a requisição HTTP.
+#'
+#' @return Lista com informações do card movido.
 #' @export
 
 mover_card <- function(card_id, fase_destino_id, response_fields = NULL, headers = c()){

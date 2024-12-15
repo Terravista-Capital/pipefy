@@ -1,8 +1,13 @@
+#' Realiza uma requisição para a API do Pipefy.
+#'
+#' @param query Query GraphQL a ser enviada para a API.
+#' @param headers Headers adicionais para a requisição HTTP.
+#'
+#' @return Resposta da API do Pipefy.
 #' @export
 
-
 requisicao <- function(query, headers=c()){
-  obj <- pipefy::preparar_requisicao()
+  obj <- preparar_requisicao()
 
   # Atualizar headers
   headers <- c(obj$headers, headers)

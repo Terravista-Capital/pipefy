@@ -1,6 +1,11 @@
+#' Lista os membros da organizacao no Pipefy
+#'
+#' @param header Headers adicionais para a requisição HTTP.
+#'
+#' @return Tibble com informações dos membros do pipe.
 #' @export
 
-pipe_lista_membros <- function(header = c()){
+listar_membros_organizacao <- function(header = c()){
 
   org_id <- Sys.getenv("PIPEFY_ORGANIZATION_ID")
 
